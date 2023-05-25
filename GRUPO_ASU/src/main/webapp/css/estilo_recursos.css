@@ -1,0 +1,211 @@
+@charset "UTF-8";
+
+
+/* Estilos para el cuerpo de la página */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para el encabezado */
+header {
+  background-color: rgb(198, 194, 193);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+  
+}
+
+.logo {
+  font-size: 400px;
+  font-weight: bold;
+  text-transform: uppercase;
+  
+}
+
+.logo-image {
+  max-width: 280px;
+  height: auto;
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Estilos para la sección de inicio */
+#inicio {
+  background-image: url("https://via.placeholder.com/100x50");
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 7px;
+}
+
+#inicio h1 {
+  font-size: 48px;
+  margin: 0;
+  padding: 0;
+   font-family: Arial, sans-serif;
+}
+
+#inicio p {
+  font-size: 24px;
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+
+/* Estilos para la sección de servicios */
+#servicios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  text-align: center;
+}
+#servicios h2{
+	font-size: 49px;
+  display: block;
+  text-align: center;
+}
+
+#servicios p{
+	font-size: 20px;
+  display: block;
+  text-align: center;
+}
+
+
+.servicio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 8px;
+  padding: 19px;
+  width: 300px;
+}
+
+
+
+.servicio img {
+  max-width: 100%;
+  margin-bottom: 0px;
+}
+
+.servicio h3 {
+  font-size: 25px;
+  display: block;
+  text-align: center;
+}
+
+.servicio p {
+  font-size: 16px;
+  padding: 0;
+  text-align: left;
+}
+
+
+
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.columna-izquierda{
+  flex-basis: 33.33%;
+  text-align: left;
+  
+  
+}
+.columna-centro,
+.columna-derecha {
+  flex-basis: 33.33%;
+  text-align: center;
+}
+
+.columna-derecha {
+  text-align: right;
+}
+.logo-footer{
+    width: 50px;
+    height: auto;
+    margin: 10px;
+}
+
+
+
+
+/* ESTILOS PARA EL SECTION */
+
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  max-width: 1600px;
+  width: 100%;
+  margin: 30px;
+  
+}
+
+.left-image, .right-image {
+  flex: 1;
+}
+
+.left-image img, .right-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.center-content {
+  flex: 2;
+  padding: 0 20px;
+}
+
+@media (max-width: 767px) {
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .left-image, .right-image, .center-content {
+    flex: 1 0 100%;
+  }
+
+  .center-content {
+    order: 2;
+  }
+}
